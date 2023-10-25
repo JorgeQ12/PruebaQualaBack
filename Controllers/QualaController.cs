@@ -117,7 +117,7 @@ namespace PruebaBackQuala.Controllers
                 await DbContext.SaveChangesAsync();
                 return Ok(new {message = "se ha eliminado correctamente" });
             }
-            catch (Exception ex)
+            catch (Exception ex) 
             {
                 return BadRequest(ex.Message);
             }
